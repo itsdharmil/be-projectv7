@@ -1,0 +1,24 @@
+<html>
+    <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+        <source src="../static/vid.mp4" type="video/mp4">
+      </video>
+    <body>
+        <form action="http://localhost:5000/login" method="post">
+            
+            
+                <label>enter formation:</label>
+            
+                <select name="ff" id="ff">
+                <option value="4_4_2">4_4_2</option>
+                <option value="5_3_2">5_3_2</option>
+                </select>
+            
+            
+
+            <p>enter budget in millions(euros) :</p>
+            <p><input type="text" name="bb"/></p>
+            <p><input type="submit" value="submit"/></p>
+        </form>
+        
+    </body>
+</html>

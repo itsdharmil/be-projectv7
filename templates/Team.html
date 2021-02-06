@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BE PROEJCT</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+    <source src="../static/vid.mp4" type="video/mp4">
+</video>
+<div class="video-overlay"></div>
+
+<body>
+    <div class="logo">
+       <a href="index.html"><img  src="../static/logoBB.svg" alt=""></a> 
+    </div>
+    <div class="inner_main_nav">
+        <ul>
+            <li><a href="#">Search Players</a></li>
+            <li><a href="#">Player Replacement</a></li>
+            <li><a href="#">Match Prediction</a></li>
+            <li><a href="Team.html">Create a Team!</a></li>
+
+        </ul>
+    </div>
+
+    <div class="FORM">
+        <form action="http://localhost:5000/login" method="post">
+            <div class="formation">
+                <p>ENTER FORMATION</P>
+                <br>
+                <select name="ff" id="ff">
+                    <option value="4_4_2">4_4_2</option>
+                    <option value="5_3_2">5_3_2</option>
+                    <option value="4_1_2_1_2">4_1_2_1_2</option>
+                    <option value="4_2_4">4_2_4</option>
+                    <option value="4_3_2_1">4_3_2_1</option>
+                    <option value="3_5_2">3_5_2</option>
+
+                    <br>
+                    <br>
+                </select>
+            </div>
+            <br>
+            <p>Enter budget in Millions(euros) :</p>
+
+            <p><input type="text" name="bb" /></p>
+            <p><input type="submit" value="submit" /></p>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
