@@ -49,12 +49,6 @@ def Team():
 
 
 
-@app.route('/players.html/')
-def players():
-    ids=trial.allplayer()
-    dictt=trial.player_details(ids)
-    return render_template("players.html",dictt=dictt,n=len(ids),ids=ids)
-
 
 
 @app.route ('/login', methods=['POST', "GET"])
